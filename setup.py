@@ -4,6 +4,7 @@ from setuptools import find_packages
 
 setup(
     name='kathara',
+    zip_safe = False,
     package_dir={'': 'src'},
     packages=find_packages('src'),
     py_modules=['kathara'],

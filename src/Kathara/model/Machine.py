@@ -49,7 +49,7 @@ class Machine(object):
             None
         """
         name = name.strip()
-        matches = re.search(r"^[a-z0-9_]{1,30}$", name)
+        matches = re.search(r"^[A-Za-z0-9_\-]{1,30}$", name)
         if not matches:
             raise SyntaxError(f"Invalid device name `{name}`.")
 

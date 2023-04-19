@@ -53,7 +53,7 @@ class DepParser(object):
             if line and not line.startswith('#'):
                 # E.g. MACHINE: MACHINE1 MACHINE2 MACHINE3
                 # Or MACHINE:MACHINE1 MACHINE2 MACHINE3
-                matches = re.search(r"^(?P<key>\w+):\s?(?P<deps>(\w+ ?)+)$",
+                matches = re.search(r"^(?P<key>[a-zA-Z0-9\-]+):\s?(?P<deps>([a-zA-Z0-9\-]+ ?)+)$",
                                     line
                                     )
 
