@@ -9,4 +9,5 @@ RUN apt-get update && apt-get install -y \
 	openresolv \
 	squid \
 	dnsmasq \
-	bind9 bind9utils
+	bind9 bind9utils \
+	bird
